@@ -36,3 +36,5 @@
 
 - include: check-status.yml
   when: gluster_check is defined and gluster_check
+  tags:
+    - gluster_check
