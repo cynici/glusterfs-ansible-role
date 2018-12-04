@@ -1,0 +1,5 @@
+---
+# tasks file for glusterfs-ansible-role
+
+- name: gluster peer status
+  command: gluster peer status

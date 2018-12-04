@@ -33,3 +33,6 @@
 - name: Remove volume(s)
   include: remove-volumes.yml
   when: glusterfs_volumes
+
+- include: check-status.yml
+  when: gluster_check is defined and gluster_check
